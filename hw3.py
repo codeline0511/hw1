@@ -1,4 +1,4 @@
-from Fixed_price import get_fixed_price as Fp
+from Fixed_price_hw3 import get_fixed_price as Fp
 
 discount_much = int(input('할인율은?'))
 
