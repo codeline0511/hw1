@@ -1,3 +1,16 @@
+def read_number(a):
+    n1 = a // 100
+    ex_1 = a % 100
+    n2 = ex_1 // 10 
+    n3 = ex_1 % 10
+
+    L1 = read_single_digit(n1)
+    L2 = read_single_digit(n2)
+    L3 = read_single_digit(n3)
+
+    a_1 = (f'{L1} {L2} {L3}')
+    return a_1
+
 def read_single_digit(n):
     if n == '0':
         return '영'
@@ -19,17 +32,6 @@ def read_single_digit(n):
         return '팔'
     elif n == '9':
         return '구'
-
-def read_number(a):
-    a_1 = a[0]
-    a_2 = a[1]
-    a_3 = a[2]
-    digit_1 = read_single_digit(a_1)
-    digit_2 = read_single_digit(a_2)
-    digit_3 = read_single_digit(a_3)
-    digit = digit_1, digit_2, digit_3
-    return digit
-
 
 num = input("세 자리 정수 입력: ")
 print(f'{read_number(num)}')
